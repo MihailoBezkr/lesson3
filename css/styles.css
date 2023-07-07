@@ -1,3 +1,4 @@
+/* total */
 :root {
     --primary-background-colour: #ffffff;
     --secondary-background-colour: #2e2f42;
@@ -40,6 +41,20 @@ margin-top: 0px;
     display: inline-block;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1158px;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-right: 0px;
+    padding-bottom: 120px;
+    padding-left: 0px;
+}
+
+/* header */
 .container.header{
     display: flex;
     align-items: baseline;
@@ -129,10 +144,7 @@ display: flex;
 margin-left: 40px;
 }
 
-.navigation  .address{
-display: flex;
-}
-
+/* hero */
 
 .hero {
     background-color: var(--secondary-background-colour);
@@ -176,8 +188,10 @@ text-align: center;
     padding-left: 32px;
     border-radius: 4px;
     border-color: transparent;
-    margin-bottom: 0px;
+    margin-top: 48px;
 }
+
+/* advantages */
 
 .advantages{
     display: flex;
@@ -213,9 +227,7 @@ text-align: center;
 margin-right: 0px;
 }
 
-.team {
-    background-color: var(--section-background-colour);
-}
+/* work */
 
 .working-title{
     font-weight: 700;
@@ -243,6 +255,26 @@ margin-right: 0px;
 
 .work-list{
 display: flex;
+}
+
+.category-work {
+    color: #434455;
+}
+
+.name-work {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondery-text-colour);
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+/* team */
+
+.team {
+    background-color: var(--section-background-colour);
 }
 
 .team-title {
@@ -290,6 +322,8 @@ display: flex;
     padding-bottom: 32px;
 }
 
+/* footer */
+
 .footer {
     background-color: var(--secondary-background-colour);
     padding-top: 100px;
@@ -308,6 +342,7 @@ display: flex;
     max-width: 264px;
     margin-top: 16px;
 }
+/* body portfolio */
 
 .filter-button {
     font-family: 'Roboto', sans-serif;
@@ -332,31 +367,6 @@ display: flex;
     background-color: var(--accent-colour);
 }
 
-.category-work {
-    color: #434455;
-}
-
-.name-work{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--secondery-text-colour);
-    padding-top: 32px;
-    padding-bottom: 8px;
-}
-.container{
-    margin: 0 auto;
-    max-width: 1158px;
-    padding: 0 15px;
-}
-
-.section{
-    padding-top: 120px;
-    padding-right: 0px;
-    padding-bottom: 120px;
-    padding-left: 0px;
-}
 
 .section-portfolio {
     padding-bottom: 120px;
@@ -382,18 +392,15 @@ margin-left: 24px;
 .card-list{
 display: flex;
 flex-wrap: wrap;
+padding: 0;
+margin: 0;
+list-style: none;
+margin-left: -20px;
+margin-top: -20px;
 }
 
 .cards{
-margin-right: 24px;
-width: 360px;
-padding-bottom: 48px;
-}
-
-.cards:nth-child(3n){
-margin-right: 0px;
-}
-
-.cards:nth-last-child(-n + 3) {
-    padding-bottom: 0px;
+flex-basis: calc(100 / 3 -20px);
+margin-left: 20px;
+margin-top: 20px;
 }
